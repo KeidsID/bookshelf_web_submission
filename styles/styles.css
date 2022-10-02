@@ -1,0 +1,64 @@
+/*
+primary color: #fedbd0
+secondary color: #feeae6
+text color: #442c2e
+*/
+
+* {
+  box-sizing: border-box;
+
+  color: #442c2e;
+}
+
+body {
+  background-color: #feeae6;
+  font-family: "Rubik", sans-serif;
+
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #fedbd0;
+  box-shadow: 0px 7.5px 7px 2.5px rgba(0, 0, 0, 0.25);
+  text-align: center;
+
+  padding: 16px 0px;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  padding: 16px 8px;
+}
+
+h1 {
+  display: inline;
+
+  font-size: 96;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 60;
+  font-weight: 300;
+}
+
+/* Subtitle 1 */
+label {
+  font-size: 16;
+  font-weight: 500;
+}
+
+/* Body 1 */
+p,
+input {
+  font-size: 16;
+  font-weight: 400;
+}
+
+/* Button */
+button {
+  font-size: 14;
+  font-weight: 500;
+}

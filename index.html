@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>BOOKSHELF</h1>
+    </header>
+    <main class="flex-column">
+      <section class="input-section">
+        <h2>Simpan data buku anda disini</h2>
+        <form id="formBook">
+          <div class="input">
+            <label for="inputBookTitle">Judul</label>
+            <input id="inputBookTitle" type="text" required />
+          </div>
+          <div class="input">
+            <label for="inputBookAuthor">Penulis</label>
+            <input id="inputBookAuthor" type="text" required />
+          </div>
+          <div class="input">
+            <label for="inputBookYear">Tahun Terbit</label>
+            <input id="inputBookYear" type="number" required />
+          </div>
+          <div>
+            <label for="inputBookIsComplete">Selesai Dibaca</label>
+            <input id="inputBookIsComplete" type="checkbox" />
+          </div>
+          <input type="submit" value="SIMPAN" class="btn-submit" />
+        </form>
+      </section>
+      <section class="search-section">
+        <h2>Cari buku</h2>
+        <form id="formSearch">
+          <div class="input">
+            <label for="inputSearch">Judul</label>
+            <input id="inputSearch" type="text" required />
+          </div>
+          <input type="submit" value="CARI" class="btn-search" />
+        </form>
+      </section>
+      <div class="responsive-div">
+        <section class="booklist-section">
+          <h2>Belum dibaca</h2>
+          <div id="unread" class="booklist"></div>
+        </section>
+        <div class="responsive-margin"></div>
+        <section class="booklist-section">
+          <h2>Sudah dibaca</h2>
+          <div id="read" class="booklist"></div>
+        </section>
+      </div>
+    </main>
+    <script src="js/input_script.js"></script>
+    <script src="js/search_event.js"></script>
+  </body>
+</html>
